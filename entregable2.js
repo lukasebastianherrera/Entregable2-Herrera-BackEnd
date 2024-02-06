@@ -77,11 +77,10 @@ const productManager = new ProductManager("./Productos.json");
 const products = productManager.getProducts();
     console.log(products);
 productManager.addProduct("producto prueba1", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);
-productManager.addProduct("producto prueba2", "Este es un producto prueba2", 22200, "Sin imagen", "abc22222", 23);
 console.log(products);
 const productByID = productManager.getProductById(1)
 const productByID1 = productManager.getProductById(2)
 const actualizarProducto = productManager.updateProduct(1, "price", 300)
+console.log(products);
+const deleteProduct= productManager.deleteProduct(1)
 console.log(products)
-// productManager.deleteProduct(1);
-// console.log(products);    
